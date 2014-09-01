@@ -1,0 +1,5 @@
+[auto-ffmpeg]
+name=FFMpeg Package by 9xhost for CentOS 6 - $basearch
+baseurl=http://dl.9xhost.info/yumrepo/centos/6/$basearch/
+enabled=1
+gpgcheck=0
