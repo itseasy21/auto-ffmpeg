@@ -22,7 +22,7 @@ echo -e "$GREEN----------------------------------------$RESET"
 
 #--Making Sure we have required libs
 cd /root
-yum install vim wget sed rpm -y
+yum install vim wget sed rpm gcc -y
 
 #--Libs Check
 echo " "
