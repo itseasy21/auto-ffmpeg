@@ -20,7 +20,7 @@ Check with the below steps for easy installation.
 ```bash
 $> yum update -y
 $> yum install wget -y
-$> wget "https://raw.githubusercontent.com/itseasy21/auto-ffmpeg/master/install-ffmpeg.sh" -O /root/install-ffmpeg.sh
+$> wget --no-check-certificate "https://raw.githubusercontent.com/itseasy21/auto-ffmpeg/master/install-ffmpeg.sh" -O /root/install-ffmpeg.sh
 $> cd /root
 $> chmod +x install-ffmpeg.sh
 $> ./install-ffmpeg.sh
