@@ -15,17 +15,11 @@ clear
 
 echo -e "$GREEN----------------------------------------$RESET"
 echo -e "     $RED W3TooLS FFMpeg Installer $RESET"
-echo -e "              Version 0.1             "
+echo -e "              Version 0.1.1            "
 echo -e "     http://www.w3tool.blogspot.in/  "
 echo -e "$GREEN----------------------------------------$RESET"
 
-
-#--Making Sure we have required libs
-cd /root
-yum install vim wget sed rpm gcc -y
-
-#--Libs Check
-echo " "
+#-Yum Check
 echo -ne "Checking for Yum .."
 if [ -e  "/etc/yum.conf" ]; then
 	echo -e "[ $GREEN Found $RESET ]"
@@ -34,6 +28,12 @@ else
 	exit
 fi
 
+#--Making Sure we have required libs
+cd /root
+yum install vim wget sed rpm gcc -y
+
+#--Libs Check
+echo " "
 echo -ne "Checking for SED .."
 if [ -e  "/bin/sed" ]; then
 	echo -e "[ $GREEN Found $RESET ]"
