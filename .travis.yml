@@ -1,1 +1,1 @@
-script: "./install-ffmpeg.sh"
+script: "sh install-ffmpeg.sh"
