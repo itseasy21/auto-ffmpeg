@@ -1,5 +1,6 @@
 auto-ffmpeg
 ===========
+[![Build Status](https://travis-ci.org/itseasy21/auto-ffmpeg.svg?branch=master)](https://travis-ci.org/itseasy21/auto-ffmpeg)
 
 Auto FFMpeg Installer for CentOS 6+ and other Control Panel that support CentOS 6+ (eg Kloxo, ZPanel etc)
 
