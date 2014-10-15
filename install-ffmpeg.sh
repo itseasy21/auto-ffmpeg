@@ -73,6 +73,10 @@ wget http://downloads.sourceforge.net/ffmpeg-php/ffmpeg-php-0.6.0.tbz2
 tar xjf ffmpeg-php-0.6.0.tbz2
 cd ffmpeg-php-0.6.0
 sed -i 's/PIX_FMT_RGBA32/PIX_FMT_RGB32/g' ffmpeg_frame.c
+#3 new fix for centos 6.5 
+sed -i 's/list_entry *le/zend_rsrc_list_entry *le/g' ffmpeg_movie.c
+sed -i 's/list_entry new_le/zend_rsrc_list_entry new_le/g' ffmpeg_movie.c
+sed -i 's/sizeof(list_entry)/sizeof(zend_rsrc_list_entry)/g' ffmpeg_movie.c
 phpize
 ./configure
 make
